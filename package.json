@@ -1,0 +1,42 @@
+{
+  "name": "my-webpack-project",
+  "description": "My webpack project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.prod.config.js",
+    "build:dev": "webpack --mode development --config webpack.dev.config.js",
+    "build:start": "PORT=3001 npx serve ./dist",
+    "start": "webpack serve --mode development --config webpack.dev.config.js",
+    "start:live": "webpack serve --mode development --config webpack.dev.config.js --liveReload"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Daigo Shitara",
+    "email": "stain.witness@gmail.com"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "next",
+    "prettier-eslint": "^12.0.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}
